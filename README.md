@@ -1,25 +1,13 @@
-Prueba-DRF-B4D
-===
+## Prueba-B4D:
 
-## Instrucciones:
+### Comando para levantar el proyecto:
+- docker compose up --build
 
-### Configuración Inicial:
-- Crea un proyecto de Django llamado myproject.
-- Crea una aplicación llamada blog.
+### Enlace local a la vista completa:
+- http://127.0.0.1:8000/blog/post/
+En esta ventana podrá crear y visualizar elementos.
 
-### Modelos:
-- Define un modelo Post en la aplicación blog con los siguientes campos:
-  - title: CharField (máximo 200 caracteres)
-  - content: TextField
-  - created_at: DateTimeField (automáticamente establecido al momento de creación)
+### Enlace a la vista de cada Post:
+- http://127.0.0.1:8000/blog/post/id/
 
-### Serializadores:
-- Crea un serializador para el modelo Post llamado PostSerializer.
-
-### Vistas y Rutas:
-- Implementa las vistas para manejar las operaciones CRUD utilizando vistas basadas en clases de DRF.
-- Configura las rutas en el archivo urls.py de la aplicación blog para que se puedan realizar las operaciones CRUD a través de la API.
-
-## Recomendaciones:
-> - Tomar en cuenta que es una prueba sencilla, lo que buscamos evaluar es lo que se considera production ready.
-> - Toma en cuenta que buscamos ver que tecnologias manejas, por lo que te pedimos demostrar tus capacidades en todas las tecnologias que manejas.
+Recuerde reemplazar id por el *id* de cada post. En esta ventana podrá editar o borrar el elemento.
