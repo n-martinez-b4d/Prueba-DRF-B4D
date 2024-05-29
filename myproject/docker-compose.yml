@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=myprojectDB
+      - POSTGRES_USER=garyFernandez
+      - POSTGRES_PASSWORD=gary123123
+    ports:
+      - "8765:5432" #Mapeamos internamente al puerto 8765
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
